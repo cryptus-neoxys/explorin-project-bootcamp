@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>JS</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  // let firstName = 'Dev';// variables
+  // const greet = "Hello"; // constants
+  // console.log(greet + " " + firstName + " ");
+
+  // // == ~ loose equality check
+  // if (1 == '1') {
+  //   console.log('truthy');
+  // } else {
+  //   console.log('falsey');
+  // }
+
+  // // === ~ strict equality check
+  // if (1 === '1') {
+  //   console.log('truth');
+  // } else {
+  //   console.log('false');
+  // }
+
+  // let array = [1, 2, 3, 4, 5, 6, 7, [10, 20, 30]]
+  // // for (let index = 0; index < array.length; index++) {
+  // //   let ele = array[index];
+  // //   console.log(ele);
+  // // }
+
+  // for (const ele of array) {
+  //   console.log(ele);
+  // }
+
+  // // keys are strings
+  // let obj = {
+  //   "a": 1,
+  //   "b": 2,
+  //   "c": 3
+  // }
+  // console.log("with dot notation ." + obj.a); // dot notation
+  // console.log("with bracket notation []" + obj["a"]); // bracket notation
+
+
+  // // for-in ~= foreign :: foreign keys in DB -> KEYS
+  // for (const key in obj) {
+  //   console.log(key + ": " + obj[key]);
+  // }
+
+  // promise : Pending
+  //          /       \
+  // fulfilled         rejected
+  // fetch returns a promise
+  fetch("https://www.google.com")
+    .then(function resolved(res) { // PROMISE: fulfilled
+      console.log(res)
+    })
+    .catch(function rejected(err) { // PROMISE: rejected
+      console.error(err);
+    })
+    .finally(function () {
+      console.log('fetched from: https://www.google.com');
+    })
+
+</script>
+
+</html>

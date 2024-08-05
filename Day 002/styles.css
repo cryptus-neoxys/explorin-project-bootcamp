@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-style: italic;
+  color: red;
+}
+
+table {
+  margin: 20px 40px;
+  border: 1px solid black;
+}
+
+/* class selector */
+.table-element {
+  padding: 4px;
+  /* margin: 12px; */
+  border: 1px solid darkblue;
+  background: skyblue;
+}
+
+/* id selector */
+#btn {
+  height: 2em;
+}
+
+section {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    height: 50vh;
+    background-color: skyblue;
+  }
+}
