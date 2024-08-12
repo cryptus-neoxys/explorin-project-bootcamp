@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev's Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo">Dev's Portfolio</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Welcome to my portfolio</h1>
+      <p>Discover my work and projects</p>
+      <a href="projects.html" class="btn">View my work</a>
+    </section>
+    <section id="project-container">
+      <h2>Featured Projects</h2>
+      <div id="projects">
+        <!-- Dynamically load projects here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="social-media">
+      <!-- Social Media Links -->
+    </div>
+    <p>&copy; <span id="copyright-year">
+        <script>document.getElementById('copyright-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span> Dev's Portfolio </p>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo">Dev's Portfolio</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="project-container">
+    <h1>My Projects</h1>
+    <label for="search">Search Projects: </label>
+    <input type="text" id="search" name="search" placeholder="Search projects ...">
+    <div id="projects">
+      <!-- Dynamically filter & load projects here -->
+    </div>
+  </div>
+
+  <footer>
+    <div id="social-media">
+      <!-- Social Media Links -->
+    </div>
+    <p>&copy; <span id="copyright-year">
+        <script>document.getElementById('copyright-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span> Dev's Portfolio </p>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
