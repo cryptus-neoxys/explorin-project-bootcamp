@@ -21,5 +21,8 @@
     "activityBar.background": "#193315",
     "titleBar.activeBackground": "#22481D",
     "titleBar.activeForeground": "#F6FBF5"
-  }
+  },
+  "cSpell.words": [
+    "IIFE"
+  ]
 }
