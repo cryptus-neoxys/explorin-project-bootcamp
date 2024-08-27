@@ -6,12 +6,11 @@ export const Content = () => {
 
   return (
     <main
-      style={{
-        backgroundColor: theme === "light" ? "#fff" : "#555",
-        color: theme === "light" ? "#000" : "#fff",
-        padding: "2rem",
-        minHeight: "200px",
-      }}
+      className={`${
+        theme === "light"
+          ? "bg-slate-100 text-slate-900"
+          : "bg-slate-900 text-slate-100"
+      } p-2 min-h-48:`}
     >
       <h2>Welcome to my Theme Switcher</h2>
       <p>

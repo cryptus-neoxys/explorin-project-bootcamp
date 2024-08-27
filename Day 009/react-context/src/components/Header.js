@@ -7,10 +7,11 @@ export const Header = () => {
 
   return (
     <header
-      style={{
-        backgroundColor: theme === "light" ? "#f0f0f0" : "#333333",
-        color: theme === "light" ? "#333333" : "#f0f0f0",
-      }}
+      className={`${
+        theme === "light"
+          ? "bg-slate-100 text-slate-900"
+          : "bg-slate-900 text-slate-100"
+      }`}
     >
       <h1>Theme Switcher App</h1>
     </header>
